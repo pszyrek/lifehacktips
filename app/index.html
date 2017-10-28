@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/font-awesome.min.css">
+
+    </head>
+
+    <body class="flex flex-column fj-between fa-center w-12 bg-col-tertiary font-primary col-w">
+        <header class="w-8">
+            <div class="flex fj-end w-12">
+                <div class="social flex flex-row fj-around w-1">
+                    <div class=" social__item">
+                        <a href="#" class="social__item-link">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="social__item">
+                        <a href="#" class="social__item-link">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+                    <div class="social__item">
+                        <a href="#" class="social__item-link">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-container flex flex-row fj-between">
+                <div class="brand font-secondary">
+                    <!-- <img src=" " alt=" "> -->
+                    LOGO
+                </div>
+                <nav class="flex fa-end">
+                    <ul class="nav-list flex flex-row fj-around">
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__item-link">HOME</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__item-link">ABOUT US</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__item-link">PROJECTS</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__item-link">SERVICES</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__item-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="carousel-container w-8">
+            <div class="carousel-container__bgcol flex flex-row fj-around">
+                <div class="carousel-container__step flex fa-center fj-center">
+                    <i id="step-prev" class="fa fa-angle-left item" aria-hidden="true"></i>
+                </div>
+                <!-- <div class="carousel-container__element flex flex-column fa-start fj-center">
+                    <div class="title ">Zajebisty tytuł</div>
+                    <div class="paragraph">Zajebisty paragraf</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat. Curabitur at efficitur enim. Quisque sodales risus tempor nisl placerat, venenatis venenatis massa lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat.</div>
+                </div> -->
+                <div class="carousel-container__element flex flex-column fa-start fj-center">
+                    <div class="title ">Zajebisty tytuł</div>
+                    <div class="paragraph">Zajebisty paragraf</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat. Curabitur at efficitur enim. Quisque sodales risus tempor nisl placerat, venenatis venenatis massa lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat.</div>
+                </div>
+                <div class="carousel-container__step flex fa-center fj-center" onclick="stepNext()">
+                    <i id="step-next" class="fa fa-angle-right item" aria-hidden="true"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-block flex flex-column fj-around fa-start w-8">
+            <span class="title col-grey-lighter">LOREM IPSUM DOLOR SIT <span class="col-accent">AMET CONSECTETUR</span></span>
+            <span class="description col-grey-lighter">INTEGER SEMPER LECTUS ORNARE VENENATIS VOLUTPAT</span>
+        </section>
+
+        <section class="tabs-block flex flex-row fj-around w-8">
+            <div class="tab flex flex-column fa-center fj-center">
+                <span class="title">Lorem ipsum</span>
+                <div class="description col-grey-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat. Curabitur at efficitur enim. Quisque sodales risus tempor nisl placerat, venenatis venenatis massa lacinia.</div>
+                <div class="hyperlink flex fj-end">
+                    <a href="#" class="col-w">READ MORE</a>
+                </div>
+            </div>
+            <div class="tab flex flex-column fa-center fj-center">
+                <span class="title">Lorem ipsum</span>
+                <div class="description col-grey-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat. Curabitur at efficitur enim. Quisque sodales risus tempor nisl placerat, venenatis venenatis massa lacinia.</div>
+                <div class="hyperlink flex fj-end">
+                    <a href="#" class="col-w">READ MORE</a>
+                </div>
+            </div>
+            <div class="tab flex flex-column fa-center fj-center">
+                <span class="title">Lorem ipsum</span>
+                <div class="description col-grey-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat. Curabitur at efficitur enim. Quisque sodales risus tempor nisl placerat, venenatis venenatis massa lacinia.</div>
+                <div class="hyperlink flex fj-end">
+                    <a href="#" class="col-w">READ MORE</a>
+                </div>
+            </div>
+            <div class="tab flex flex-column fa-center fj-center">
+                <span class="title">Lorem ipsum</span>
+                <div class="description col-grey-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat. Curabitur at efficitur enim. Quisque sodales risus tempor nisl placerat, venenatis venenatis massa lacinia.</div>
+                <div class="hyperlink flex fj-end">
+                    <a href="#" class="col-w">READ MORE</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutus w-8">
+            <div class="aboutus__element flex flex-row fj-between fa-center w-12">
+                <span class="phone-number w-3">508 044 788</span>
+                <span class="title flex fj-start col-grey-lighter w-6">Latest project:</span>
+                <span class="w-off-3"></span>
+            </div>
+            <div class="aboutus__element flex flex-row">
+                <div class="contact flex flex-column fa-start w-3">
+                    <div class="e-mail-block flex flex-column col-grey-dark">
+                        <span class="text">E-Mail:</span>
+                        <span class="text e-mail">piotrekbujna@gmail.com</span>
+                    </div>
+                    <div class="location-info flex flex-column col-grey-dark">
+                        <span class="text">Pomorska 30/7</span>
+                        <span class="text">Jastrzębie-Zdrój</span>
+                        <span class="text">Polska 44-335</span>
+                    </div>
+                </div>
+
+                <div class="photos flex flex-row fj-between w-6">
+                    <img src="./img/page1.jpg" alt="">
+                    <img class="second-photo" src="./img/page2.jpg" alt="">
+                </div>
+
+                <div class="project item flex flex-column fj-between w-3">
+                    <div class="project-item flex flex-column">
+                        <span class="project__name col-grey-dark">NAME: <span class="col-accent">lifeHackTips</span></span>
+                        </span>
+                        <span class="project__destiny col-grey-dark">SIMPLE TRICKS</span>
+                    </div>
+                    <div class="project__description col-grey-dark">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat.
+                    </div>
+                </div>
+            </div>
+
+            <div class="aboutus__element flex flex-row">
+                <div class="w-off-3"></div>
+                <div class="w-6 description col-grey-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Integer semper lectus ornare venenatis volutpat.</div>
+                <div class="w-off-3"></div>
+            </div>
+        </section>
+
+        <script src="./scripts/main.js"></script>
+    </body>
+
+</html>

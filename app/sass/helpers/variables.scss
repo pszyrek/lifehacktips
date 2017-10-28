@@ -1,0 +1,9 @@
+// GRID SYSTEM VARIABLES //
+$columns: 12;
+$default-size: 0px;
+$sm-size: 768px;
+$md-size: 1024px;
+$lg-size: 1200px;
+$sl-size: 1920px;
+$colors: ( 'w': #fff, 'b': #000, 'primary': #3E4147, 'secondary': #222528, 'tertiary': rgb(23, 23, 23), 'grey-light': #C9D1D3, 'grey-lighter': #6c6c6c, 'grey-dark': #424242, 'accent': #FFBC11);
+$sizes: ( 's': ($default-size, $sm-size + 1), 'm': ($sm-size, $md-size + 1), 'l': ($md-size, $lg-size + 1), 'x': ($lg-size, $sl-size + 1));

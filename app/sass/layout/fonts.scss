@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+}
+
+@font-face {
+    font-family: 'Minivier';
+    src: url('https://fonts.googleapis.com/css?family=Miniver');
+}
+
+.font-primary {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.font-secondary {
+    font-family: 'Miniver', cursive;
+}

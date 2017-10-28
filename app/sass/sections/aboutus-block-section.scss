@@ -1,0 +1,31 @@
+.aboutus {
+    width: 100%;
+    .description {
+        padding: 2rem 2rem 2rem 0;
+        font-size: .9rem;
+        line-height: 1.1rem;
+    }
+    .title,
+    .phone-number {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .e-mail-block {
+        margin-bottom: 2rem;
+    }
+    .photos {
+        padding: 0 3rem 0 0;
+        .second-photo {
+            margin-left: 1rem;
+        }
+    }
+    .project {
+        &-item {
+            font-weight: 700;
+        }
+        &__description {
+            font-size: .9rem;
+            line-height: 1.1rem
+        }
+    }
+}

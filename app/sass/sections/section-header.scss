@@ -1,0 +1,44 @@
+header {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.social {
+    &__item {
+        margin-right: 1rem;
+    }
+    &__item-link {
+        border-radius: .4rem;
+        padding: .2rem .3rem .2rem .3rem;
+        transition: all ease .3s;
+        color: #3E4147;
+        &:hover {
+            color: #FFBC11;
+            background: #3E4147;
+            cursor: pointer;
+        }
+    }
+}
+
+.nav-container {
+    .brand {
+        font-size: 4rem;
+    }
+    .nav-list {
+        &__item-link {
+            box-sizing: border-box;
+            font-size: .8rem;
+            font-weight: 700;
+            margin: .5rem .8rem .5rem .8rem;
+            padding: .5rem 1.3rem .5rem 1.3rem;
+            border: solid transparent 1px;
+            color: white;
+            transition: all ease .3s;
+            &:hover {
+                border: solid #3E4147 1px;
+                color: #FFBC11;
+                cursor: pointer;
+            }
+        }
+    }
+}

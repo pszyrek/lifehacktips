@@ -1,0 +1,1 @@
+function stepNext(){i++,elements[i].classList.add("display"),console.log(i)}var next=document.getElementById("step-next"),prev=document.getElementById("step-prev"),elements=document.getElementsByClassName("carousel-container__element"),i=0;

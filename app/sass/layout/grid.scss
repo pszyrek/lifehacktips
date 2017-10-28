@@ -1,0 +1,28 @@
+@import './helpers/variables';
+@import '../helpers/mixins/grid';
+@import '../helpers/mixins/responsive';
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+}
+
+.box-column {
+    @extend .box;
+    flex-direction: column;
+}
+
+
+@for $i from 1 through $columns {
+    @include grid(null, $columns, $i);
+}
+
+@each $size, $size-value in $sizes {
+    @include responsive($size-value) {
+        @for $i from 1 through $columns {
+            @include grid($size, $columns, $i);
+        }
+    }
+}
